@@ -1,6 +1,8 @@
 """
 Functional Calculator.
 """
+
+__version__ = "0.0.1"
 __all__ = ["functional_calculator"]
 
 print("Hello there")
