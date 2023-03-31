@@ -1,4 +1,6 @@
-# from . import functional_calculator
+"""
+Functional Calculator.
+"""
 __all__ = ["functional_calculator"]
 
 print("Hello there")
