@@ -1,12 +1,8 @@
-# pytest -s tests && mypy functional_calculator.py && pyflakes functional_calculator.py
-
 import functional_calculator as fc
-'''This will place the names of all objects from <module_name> into the local symbol table, 
-with the exception of any that begin with the underscore (_) character.'''
-
 import pytest
 
 print()
+
 # gal initilize
 calculator = fc.calc()
 print(calculator)
