@@ -1,25 +1,25 @@
-from typing import Type
+from typing import Type, Union
 
-def add(n1: int|float, n2: int|float)->int|float:
+def add(n1:	Union[int, float], n2: Union[int, float])->Union[int, float]:
 	return n1 + n2
 
 
-def sub(n1: int|float, n2: int|float)-> int|float:
+def sub(n1:	Union[int, float], n2: Union[int, float])->Union[int, float]:
 	return n1 - n2
 
  
-def multi(n1: int|float, n2: int|float)-> int|float:
+def multi(n1:	Union[int, float], n2: Union[int, float])->Union[int, float]:
 	return n1 * n2
 
 
-def div(n1: int|float, n2: int|float)-> int|float|Type[Exception]:
+def div(n1:	Union[int, float], n2: Union[int, float])->Union[int, float, Type[Exception]]:
 	try:
 		return n1 / n2
 	except ValueError:
 		return ValueError
 
 
-def n_root(n1: int|float, n2: int|float)-> int|float:
+def n_root(n1:	Union[int, float], n2: Union[int, float])->Union[int, float]:
 	return n1 ** (n2**-1)
 
 
