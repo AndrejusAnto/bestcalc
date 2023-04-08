@@ -4,10 +4,11 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "funccalc"
+readme = "README.md"
 authors = [{name = "Andrejus Antoninovas", email = "andrejusantoninovas@gmail.com"}]
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
 dynamic = ["version", "description"]
 
 [project.urls]
-Home = "https://github.com/AndrejusAnto/funccalc"
+Home = "https://github.com/AndrejusAnto/bestcalc"
