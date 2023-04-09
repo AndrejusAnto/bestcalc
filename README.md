@@ -1,15 +1,28 @@
 Updated for OOP style calculator.
 <br />
+Instalation (better use virtual env, like conda, mamba or venv):
+pip install -i https://test.pypi.org/simple/ funccalc
+<br />
 Simple calculator that supports these functions:
 <br />
-reset - reset current value to 0.
+reset() - reset current value to 0.
 <br />
-add - add a number to a current value, default value is 0.
+add(number) - add a number to a current value, default value is 0.
 <br />
-sub - subtract a number from a current value.
+sub(number) - subtract a number from a current value.
 <br />
-multi - multiply a current value by number.
+multi(number) - multiply a current value by number.
 <br />
-div - divide a current value by number.
+div(number) - divide a current value by number.
 <br />
-n_root - take number root of a current value.
+n_root(number) - take number root of a current value.
+<br />
+Usage:
+<br />
+from funccalc import best_calc as bc
+<br />
+calc = bc.Calculator()
+<br />
+calc.add(3)
+<br />
+calc.reset()
