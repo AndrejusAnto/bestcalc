@@ -1,6 +1,7 @@
 Updated for OOP style calculator.
 <br />
 Installation (better use virtual env, like conda, mamba or venv):
+<br />
 pip install -i https://test.pypi.org/simple/ funccalc
 <br />
 Simple calculator that supports these functions:
