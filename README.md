@@ -2,6 +2,8 @@ Updated for OOP style calculator.
 <br />
 Simple calculator that supports these functions:
 <br />
+cur_value() - returns current value.
+<br />
 reset() - reset current value to 0.
 <br />
 add(number) - add a number to a current value, default value is 0.
