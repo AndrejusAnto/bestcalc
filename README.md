@@ -29,3 +29,5 @@ calc = bc.Calculator()
 calc.add(3)
 <br />
 calc.reset()
+<br />
+calc.cur_value()
