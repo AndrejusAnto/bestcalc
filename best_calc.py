@@ -6,6 +6,7 @@ class Calculator:
 		self.result = 0
 
 	def cur_value(self):
+		'''Returns current value'''
 		return self.result
 		
 	def add(self, number: Union[int, float])->Optional[Union[int, float]]:
