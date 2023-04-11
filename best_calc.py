@@ -25,17 +25,14 @@ class Calculator:
 			raise e
 	
 	def sub(self, number: Union[int, float])->Union[int, float]:
-		''' Subtract a number from result'''
 		self.result = self.result - number
 		return self.result
 	
 	def multi(self, number: Union[int, float])->Union[int, float]:
-		''' Multiply result by a number'''
 		self.result = self.result * number
 		return self.result
 		
 	def div(self, number: Union[int, float])->Optional[Union[int, float]]:
-		''' Divide result by a number'''
 		try:
 			self.result = self.result / number
 			return self.result
@@ -48,6 +45,5 @@ class Calculator:
 		return self.result
 	
 	def reset(self):
-		''' Reset result to 0'''
 		self.result = 0
 		return self.result
