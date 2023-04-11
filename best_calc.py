@@ -7,8 +7,8 @@ class Calculator:
 	'''
 
 	def __init__(self):
-		'''Initializing default value to 0'''
-		self.result = 0
+		'''Initializing default value as 0'''
+		self.result: int = 0
 
 	def cur_value(self):
 		'''Returns current value'''
@@ -49,5 +49,5 @@ class Calculator:
 	
 	def reset(self):
 		''' Reset result to 0'''
-		self.result: Union[int, float] = 0
+		self.result = 0
 		return self.result
