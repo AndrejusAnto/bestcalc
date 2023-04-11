@@ -2,7 +2,12 @@ from typing import Type, Union, Optional
 from math import fsum
 
 class Calculator:
+	'''Simple OOP style calculator that supprot can add, subtract, multiply and divde operations
+	cur_value() method returns a current value and reset() - to reset a current value to 0.  
+	'''
+
 	def __init__(self):
+		'''Initilizing default value'''
 		self.result = 0
 
 	def cur_value(self):
