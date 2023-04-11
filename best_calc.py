@@ -7,7 +7,7 @@ class Calculator:
 	'''
 
 	def __init__(self):
-		'''Initializing default value'''
+		'''Initializing default value to 0'''
 		self.result = 0
 
 	def cur_value(self):
