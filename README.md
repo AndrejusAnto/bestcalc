@@ -20,11 +20,11 @@ from funccalc import best_calc as bc
 calc = bc.Calculator()
 
 calc.add(3)
-print(cacl)
+print(calc)
 >>> 3.0
 
 calc.subtract(5.5)
-print(cacl)
+print(calc)
 >>> -2.5
 
 calc.reset()
