@@ -6,7 +6,7 @@ Simple calculator that supports these methods:
 <!-- <br /> -->
 * &emsp;add(number) - add a number to a current value, default value is 0.
 <!-- <br /> -->
-* &emsp;subtractnumber) - subtract a number from a current value.
+* &emsp;subtract(number) - subtract a number from a current value.
 <!-- <br /> -->
 * &emsp;multiply(number) - multiply a current value by number.
 <!-- <br /> -->
@@ -30,7 +30,7 @@ calc.add(3)
 print(cacl)
 >>> 3.0
 
-calc.subtract5.5)
+calc.subtrac(t5.5)
 print(cacl)
 >>> -2.5
 
