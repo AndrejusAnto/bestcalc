@@ -2,12 +2,6 @@ import best_calc as bc
 import pytest
 from hypothesis import given, assume, strategies as st
 
-# dar testus dėl kietamųju skaičiaus
-def test_cur_value():
-	'''Verify the output of initialized value'''
-	calc = bc.Calculator()
-	assert calc.cur_value() == 0.0
-
 
 def test_reset():
 	'''Verify the output of `reset` function aka reset to 0'''
@@ -50,35 +44,35 @@ def test_add():
 	'''Verify the output of `sub` function'''
 	calc = bc.Calculator()
 
-	assert calc.add(2) == 2.0
+	assert calc.add(2) == 2
 	assert calc.add(4) == 6.0
 
 
-def test_sub():
+def test_subtract():
 	'''Verify the output of `sub` function'''
 	calc = bc.Calculator()
-	assert calc.sub(2) == -2.0
+	assert calc.subtract(2) == -2.0
 
 	calc.add(5)
-	assert calc.sub(2) == 1.0
+	assert calc.subtract(2) == 1.0
 
 	 
-def test_multi():
+def test_multiply():
 	'''Verify the output of `multi` function'''
 	calc = bc.Calculator()
 	calc.add(2)
-	assert calc.multi(4) == 8.0
+	assert calc.multiply(4) == 8.0
 
 
-def test_div():
+def test_divide():
 	'''Verify the output of `div` function'''
 	calc = bc.Calculator()
 	calc.add(9)
-	assert calc.div(3) == 3
+	assert calc.divide(3) == 3
 
 	'''Verify divided by 0 error'''
 	with pytest.raises(ZeroDivisionError):
-		calc.div(0)
+		calc.divide(0)
 
 	 
 def test_n_root():

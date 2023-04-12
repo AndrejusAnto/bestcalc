@@ -23,15 +23,15 @@ class Calculator:
 		except OverflowError as e:
 			raise e
 	
-	def sub(self, number: Union[int, float])->Union[int, float]:
+	def subtract(self, number: Union[int, float])->Union[int, float]:
 		self.result = self.result - number
 		return self.result
 	
-	def multi(self, number: Union[int, float])->Union[int, float]:
+	def multiply(self, number: Union[int, float])->Union[int, float]:
 		self.result = self.result * number
 		return self.result
 		
-	def div(self, number: Union[int, float])->Optional[Union[int, float]]:
+	def divide(self, number: Union[int, float])->Optional[Union[int, float]]:
 		try:
 			self.result = self.result / number
 			return self.result
