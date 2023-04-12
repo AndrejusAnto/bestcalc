@@ -1,7 +1,6 @@
 Updated for OOP style calculator.
 <br />
 Simple calculator that supports these methods:
-<br />
 * &emsp;reset() - reset a current value to 0.
 * &emsp;add(number) - add a number to a current value, default value is 0.
 * &emsp;subtract(number) - subtract a number from a current value.
