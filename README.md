@@ -3,15 +3,15 @@ Updated for OOP style calculator.
 Simple calculator that supports these functions:
 <br />
 * &emsp;reset() - reset a current value to 0.
-<br />
+<!-- <br /> -->
 * &emsp;add(number) - add a number to a current value, default value is 0.
-<br />
+<!-- <br /> -->
 * &emsp;sub(number) - subtract a number from a current value.
-<br />
+<!-- <br /> -->
 * &emsp;multi(number) - multiply a current value by number.
-<br />
+<!-- <br /> -->
 * &emsp;div(number) - divide a current value by number.
-<br />
+<!-- <br /> -->
 * &emsp;n_root(number) - take number root of a current value.
 <br />
 
