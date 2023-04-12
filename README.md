@@ -1,6 +1,6 @@
 Updated for OOP style calculator.
 <br />
-Simple calculator that supports these functions:
+Simple calculator that supports these methods:
 <br />
 * &emsp;reset() - reset a current value to 0.
 <!-- <br /> -->
