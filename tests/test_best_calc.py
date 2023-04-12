@@ -49,7 +49,7 @@ def test_add():
 
 
 def test_subtract():
-	'''Verify the output of `sub` function'''
+	'''Verify the output of `subtract` function'''
 	calc = bc.Calculator()
 	assert calc.subtract(2) == -2.0
 
@@ -58,14 +58,14 @@ def test_subtract():
 
 	 
 def test_multiply():
-	'''Verify the output of `multi` function'''
+	'''Verify the output of `multiply` function'''
 	calc = bc.Calculator()
 	calc.add(2)
 	assert calc.multiply(4) == 8.0
 
 
 def test_divide():
-	'''Verify the output of `div` function'''
+	'''Verify the output of `divide` function'''
 	calc = bc.Calculator()
 	calc.add(9)
 	assert calc.divide(3) == 3
