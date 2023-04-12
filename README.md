@@ -20,9 +20,6 @@ Installation (better use virtual env, like conda, mamba or venv):
 ```console
 (fooenv)@bar:~$ pip install -i https://test.pypi.org/simple/ funccalc
 ```
-&emsp;pip install -i https://test.pypi.org/simple/ funccalc
-<br />
-
 Usage:
 <br />
 ```python
