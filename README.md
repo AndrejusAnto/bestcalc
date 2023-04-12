@@ -17,7 +17,10 @@ Simple calculator that supports these functions:
 
 Installation (better use virtual env, like conda, mamba or venv):
 <br />
-&emsp;pip install -i https://test.pypi.org/simple/ funccalc'''
+```console
+foo@bar:~$ pip install -i https://test.pypi.org/simple/ funccalc
+```
+&emsp;pip install -i https://test.pypi.org/simple/ funccalc
 <br />
 
 Usage:
