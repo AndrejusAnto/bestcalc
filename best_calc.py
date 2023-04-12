@@ -3,16 +3,15 @@ from math import fsum
 
 class Calculator:
 	'''Simple OOP style calculator that supports add, subtract, multiply and divide operations
-	cur_value() method returns a current value and reset() - to reset a current value to 0.  
+	and reset() - to reset a current value to 0.  
 	'''
 
 	def __init__(self):
 		'''Initializing default value as 0'''
 		self.result: int = 0
 
-	def cur_value(self):
-		'''Returns current value'''
-		return self.result
+	def __str__(self):
+		return f'{self.result}'
 		
 	def add(self, number: Union[int, float])->Optional[Union[int, float]]:
 		''' Add a number to result, default == 0. For summation using fsum, because
@@ -40,7 +39,7 @@ class Calculator:
 			raise ZeroDivisionError
 	
 	def n_root(self, number: int)->Union[int, float]:
-		''' Take number root of a result'''
+		'''Take number root of a result'''
 		self.result = self.result ** (number**-1)
 		return self.result
 	
