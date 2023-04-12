@@ -1,18 +1,18 @@
 Updated for OOP style calculator.
 <br />
-Simple calculator that supports these methods:
+Simple calculator that supports these functions:
 <br />
-&emsp;reset() - reset a current value to 0.
+* &emsp;reset() - reset a current value to 0.
 <br />
-&emsp;add(number) - add a number to a current value, default value is 0.
+* &emsp;add(number) - add a number to a current value, default value is 0.
 <br />
-&emsp;sub(number) - subtract a number from a current value.
+* &emsp;sub(number) - subtract a number from a current value.
 <br />
-&emsp;multi(number) - multiply a current value by number.
+* &emsp;multi(number) - multiply a current value by number.
 <br />
-&emsp;div(number) - divide a current value by number.
+* &emsp;div(number) - divide a current value by number.
 <br />
-&emsp;n_root(number) - take number root of a current value.
+* &emsp;n_root(number) - take number root of a current value.
 <br />
 
 Installation (better use virtual env, like conda, mamba or venv):
