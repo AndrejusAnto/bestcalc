@@ -23,7 +23,7 @@ calc.add(3)
 print(cacl)
 >>> 3.0
 
-calc.subtrac(t5.5)
+calc.subtract(5.5)
 print(cacl)
 >>> -2.5
 
