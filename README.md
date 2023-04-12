@@ -26,21 +26,18 @@ Usage:
 <br />
 &emsp;calc = bc.Calculator()
 <br />
----
 &emsp;calc.add(3)
 <br />
 &emsp;print(cacl)
 <br />
-&emsp;3.0
+'''&emsp;3.0
 <br />
----
 &emsp;calc.sub(5)
 <br />
 &emsp;print(cacl)
-<br />
+<br />'''
 &emsp;-2.0
 <br />
----
 &emsp;calc.reset()
 <br />
 &emsp;print(cacl)
