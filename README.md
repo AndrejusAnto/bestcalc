@@ -6,11 +6,11 @@ Simple calculator that supports these methods:
 <!-- <br /> -->
 * &emsp;add(number) - add a number to a current value, default value is 0.
 <!-- <br /> -->
-* &emsp;sub(number) - subtract a number from a current value.
+* &emsp;subtractnumber) - subtract a number from a current value.
 <!-- <br /> -->
-* &emsp;multi(number) - multiply a current value by number.
+* &emsp;multiply(number) - multiply a current value by number.
 <!-- <br /> -->
-* &emsp;div(number) - divide a current value by number.
+* &emsp;divide(number) - divide a current value by number.
 <!-- <br /> -->
 * &emsp;n_root(number) - take number root of a current value.
 <br />
@@ -30,7 +30,7 @@ calc.add(3)
 print(cacl)
 >>> 3.0
 
-calc.sub(5.5)
+calc.subtract5.5)
 print(cacl)
 >>> -2.5
 
