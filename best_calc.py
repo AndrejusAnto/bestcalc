@@ -1,4 +1,4 @@
-from typing import Type, Union, Optional
+from typing import Union, Optional
 from math import fsum
 
 class Calculator:
@@ -8,7 +8,7 @@ class Calculator:
 
 	def __init__(self):
 		'''Initializing default value as 0'''
-		self.result: int = 0
+		self.result: Union[int, float] = 0
 
 	def __str__(self):
 		return f'{self.result}'

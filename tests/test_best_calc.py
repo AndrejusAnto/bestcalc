@@ -15,18 +15,16 @@ def test_add_hypo_int(n):
 	'''Verify the output of `add` function with hypothesis for int'''
 	calc = bc.Calculator()
 	for _ in range(2):
-		init_value = calc.cur_value()
+		init_value = calc.result
 		assert calc.add(n) == bc.fsum((init_value, n))
 
 
-@given(
-	n=st.floats(allow_nan=False, allow_infinity=False),
-)
+@given(n=st.floats(allow_nan=False, allow_infinity=False))
 def test_add_hypo_float(n):
 	'''Verify the output of `add` function with hypothesis for float'''
 	try:
 		calc = bc.Calculator()
-		init_value = calc.cur_value()
+		init_value = calc.result
 		assert calc.add(n) == bc.fsum((init_value, n))
 	
 	except Exception as exc:
