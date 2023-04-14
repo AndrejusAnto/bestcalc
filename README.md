@@ -18,7 +18,14 @@ Usage:
 ```python
 from funccalc import best_calc as bc
 calc = bc.Calculator()
-
+```
+or
+```python
+from funccalc.best_calc import Calculator
+calc = Calculator()
+```
+then
+```python
 calc.add(3)
 print(calc)
 >>> 3.0
