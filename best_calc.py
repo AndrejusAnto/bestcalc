@@ -2,8 +2,8 @@ from typing import Union, Optional
 from math import fsum
 
 class Calculator:
-	'''Simple OOP style calculator that supports add, subtract, multiply, divide operations
-	and reset() - to reset a current value to 0.
+	'''Simple OOP style calculator that supports add, subtract, multiply, divide,
+	take (n) of current value and reset - to reset a current value to 0.
 	'''
 
 	def __init__(self):
