@@ -2,21 +2,21 @@ from typing import Union, Optional
 from math import fsum
 
 class Calculator:
-	'''Simple OOP style calculator that supports add, subtract, multiply, divide,
-	take (n) of current value and reset - to reset a current value to 0.
+	'''Simple OOP style calculator that supports add(summation), subtract, multiply, divide,
+	take (n) root of current value and reset - to reset a current value to 0.
 	'''
 
 	def __init__(self):
-		'''Initializing default value as 0'''
+		# Initializing default value as 0
 		self.result: Union[int, float] = 0
 
 	def __str__(self):
 		return f'{self.result}'
 		
 	def add(self, number: Union[int, float])->Optional[Union[int, float]]:
-		''' Add a number to result, default == 0. For summation using fsum, because
-		1.1 + 2.2 is not exactly 3.3.
-		'''	
+		# For summation using fsum, because 1.1 + 2.2 is not exactly 3.3.
+		# So for testing this function one can't to assert 'result == 3.3'
+		# but 'result == 1.1 + 2.2'
 		try:
 			self.result = fsum((self.result, number))
 			return self.result
@@ -35,11 +35,13 @@ class Calculator:
 		try:
 			self.result = self.result / number
 			return self.result
+		
+		# Catching ZeroDivisionError
 		except ZeroDivisionError:
 			raise ZeroDivisionError
 	
 	def n_root(self, number: int)->Union[int, float]:
-		'''Take number root of a result'''
+		# Take number root of a result
 		self.result = self.result ** (number**-1)
 		return self.result
 	
