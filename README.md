@@ -8,7 +8,7 @@ Simple calculator that supports these methods:
 * &emsp;divide(number) - divide a current value by number.
 * &emsp;n_root(number) - take number root of a current value.
 
-Installation (better use virtual env, like conda, mamba or venv):
+Installation (better use virtual environments, like conda, mamba or venv):
 <br />
 ```console
 (fooenv)@bar:~$ pip install -i https://test.pypi.org/simple/ funccalc
@@ -26,7 +26,6 @@ calc = Calculator()
 ```
 then
 ```python
-
 calc.add(1)
 >>> 1
 calc.add(0.1)
