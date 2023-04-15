@@ -57,16 +57,16 @@ class Calculator:
 	
 	def n_root(self, number: Union[int, float])->Union[int, Decimal]:
 		'''Take number root of a result. Because root of number is automatically a float like 
-		3.000000000000000000000000000, so to return int or Decimal, you can save int part to int_value, 
-		decimal numbers to decimal_values then sum it and then if sum of decimal_values is > 0, 
+		3.000000000000000000000000000, so to return int save int part to int_value, 
+		decimal numbers to decimal_numbers then sum it and then if sum of decimal_numbers is != 0, 
 		return result as Decimal else as int.
 		'''
 		operation = Decimal(str(self.result)) ** (Decimal(str(number))**-1)
 
 		int_value = str(operation)[0]
-		decimal_values = str(operation)[2:]
+		decimal_numbers = str(operation)[2:]
 
-		if sum([int(i) for i in decimal_values]) > 0:
+		if sum([int(i) for i in decimal_numbers]) != 0:
 			self.result = operation
 		else:
 			self.result = int(int_value)
