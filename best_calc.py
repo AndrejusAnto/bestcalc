@@ -1,11 +1,17 @@
 from typing import Union, Optional
 from decimal import Decimal
 
+def int_or_decimal(operation):
+	try:
+		value = int(str(operation))
+	except:
+		value = operation
+	return value
+
 class Calculator:
 	'''Simple OOP style calculator that supports add(summation), subtract, multiply, divide,
 	take (n) root of current value and reset - to reset a current value to 0. Implemented using
-	python's Decimal because of representation of binary fractions like:
-	1.1 + 2.2 == 3.3000000000000003, not 3.3.
+	python's Decimal because of representation of binary fractions like 1.1 + 2.2 is 3.3000000000000003, not 3.3.
 	'''
 
 	def __init__(self):
