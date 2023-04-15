@@ -32,7 +32,7 @@ calc.add(3)
 calc.add(3.1)
 >>> Decimal('6.1')
 print(calc)
-6.1
+>>> 6.1
 
 calc.reset()
 print(calc)
