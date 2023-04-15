@@ -27,12 +27,16 @@ calc = Calculator()
 then
 ```python
 
-calc.add(3)
->>> 3
-calc.add(3.1)
->>> Decimal('6.1')
+calc.add(1)
+>>> 1
+calc.add(0.1)
+>>> Decimal('1.1')
 print(calc)
->>> 6.1
+>>> 1.1
+calc.add(2.2)
+>>> Decimal('3.3')
+print(calc)
+>>> 3.3
 
 calc.reset()
 print(calc)
