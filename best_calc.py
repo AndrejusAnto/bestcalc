@@ -1,12 +1,14 @@
 from typing import Union, Optional
 from decimal import Decimal
 
+
 def int_or_decimal(operation):
 	try:
 		value = int(str(operation))
 	except:
 		value = operation
 	return value
+
 
 class Calculator:
 	'''Simple OOP style calculator that supports add(summation), subtract, multiply, divide,
@@ -24,37 +26,25 @@ class Calculator:
 	def add(self, number: Union[int, float])->Optional[Union[int, Decimal]]:
 		try:
 			operation = Decimal(str(self.result)) + Decimal(str(number))
-			try:
-				self.result = int(str(operation))
-			except:
-				self.result = operation
+			self.result = int_or_decimal(operation)
 			return self.result
 		except OverflowError as e:
 			raise e
 	
 	def subtract(self, number: Union[int, float])->Union[int, Decimal]:
 		operation = Decimal(str(self.result)) - Decimal(str(number))
-		try:
-			self.result = int(str(operation))
-		except:
-			self.result = operation
+		self.result = int_or_decimal(operation)
 		return self.result
 	
 	def multiply(self, number: Union[int, float])->Union[int, Decimal]:
 		operation = Decimal(str(self.result)) * Decimal(str(number))
-		try:
-			self.result = int(str(operation))
-		except:                
-			self.result = operation
+		self.result = int_or_decimal(operation)
 		return self.result
 		
 	def divide(self, number: Union[int, float])->Optional[Union[int, Decimal]]:
 		try:
 			operation = Decimal(str(self.result)) / Decimal(str(number))
-			try:
-				self.result = int(str(operation))
-			except:            
-				self.result = operation
+			self.result = int_or_decimal(operation)
 			return self.result
 		
 		# Catching ZeroDivisionError
