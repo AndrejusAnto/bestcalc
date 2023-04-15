@@ -59,7 +59,7 @@ class Calculator:
 		'''Take number root of a result. Because root of number is automatically a float like 
 		3.000000000000000000000000000, so to return int or Decimal, you can save int part to int_value, 
 		decimal numbers to decimal_values then sum it and then if sum of decimal_values is > 0, 
-		return result as Decimel else as int.
+		return result as Decimal else as int.
 		'''
 		operation = Decimal(str(self.result)) ** (Decimal(str(number))**-1)
 
