@@ -36,7 +36,7 @@ print(calc)
 
 calc.reset()
 print(calc)
->>> 0.0
+>>> 0
 
 calc.subtract(5)
 >>> -5
