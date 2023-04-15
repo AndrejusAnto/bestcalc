@@ -26,15 +26,22 @@ calc = Calculator()
 ```
 then
 ```python
-calc.add(3)
-print(calc)
->>> 3.0
 
-calc.subtract(5.5)
+calc.add(3)
+>>> 3
+calc.add(3.1)
+>>> Decimal('6.1')
 print(calc)
->>> -2.5
+6.1
 
 calc.reset()
 print(calc)
 >>> 0.0
+
+calc.subtract(5)
+>>> -5
+calc.subtract(-2.5)
+>>> Decimal('-2.5')
+print(calc)
+>>> -2.5
 ```
