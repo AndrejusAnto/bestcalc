@@ -10,10 +10,10 @@ def int_or_decimal(operation):
 	
 	Some number can be like 4.76837158203125e-07 and is Decimal. Representation of 
 	this kind of number in Decimal is with "E", not "e", so first "if" is for
-	skipping a need to return as int type.
+	skipping a need to check and return as int.
 	'''
 	if "E" not ins str(operation):
-		# This part for checking int or Decimal 
+		# This part for checking int or Decimal and returing accordingly
 		if "." in str(operation):
 			int_value, decimal_numbers = str(operation).split(".")
 			if sum([int(i) for i in decimal_numbers]) != 0:
