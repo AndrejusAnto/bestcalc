@@ -3,15 +3,14 @@ from decimal import Decimal
 
 
 def int_or_decimal(operation):
-	'''Returns int or Decimal type. Because Decimal have a very long precision 
-	and int could be represented like 3.000000000000000000000000000, so to make just 3,
+	'''Returns int or Decimal. Because Decimal have a very long precision and int 
+	could be represented like 3.000000000000000000000000000, so to make just 3,
 	save int part to int_value, decimal numbers to decimal_numbers then sum it and 
 	then if sum of decimal_numbers is != 0, return result as Decimal else as int.
 	
-
 	Some number can be like 4.76837158203125e-07 and is Decimal. Representation of 
 	this kind of number in Decimal is with "E", not "e", so first "if" is for
-	skipping a need to return int type.
+	skipping a need to return as int type.
 	'''
 	if "E" not ins str(operation):
 		# This part for checking int or Decimal 
