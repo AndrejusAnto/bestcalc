@@ -3,17 +3,28 @@ from decimal import Decimal
 
 
 def int_or_decimal(operation):
-	try:
-		value = int(str(operation))
-	except:
-		value = operation
+	'''Returns int or Decimal type. Because Decimal have a very long precision 
+	and int could be represented like 3.000000000000000000000000000, so to make just 3,
+	save int part to int_value, decimal numbers to decimal_numbers then sum it and 
+	then if sum of decimal_numbers is != 0, return result as Decimal else as int.
+	'''
+	if "." in str(operation):
+		int_value, decimal_numbers = str(operation).split(".")
+		if sum([int(i) for i in decimal_numbers]) != 0:
+			value = Decimal(str(float(operation)))
+		else:
+			value = int(int_value)
+	else:
+		value = int(operation)
+	print(value)
 	return value
 
 
 class Calculator:
 	'''Simple OOP style calculator that supports add(summation), subtract, multiply, divide,
 	take (n) root of current value and reset - to reset a current value to 0. Implemented using
-	python's Decimal because of representation of binary fractions like 1.1 + 2.2 is 3.3000000000000003, not 3.3.
+	python's Decimal because of representation of binary fractions:
+	1.1 + 2.2 is 3.3000000000000003, not 3.3.
 	'''
 
 	def __init__(self):
@@ -52,20 +63,9 @@ class Calculator:
 			raise ZeroDivisionError
 	
 	def n_root(self, number: Union[int, float])->Union[int, Decimal]:
-		'''Take number root of a result. Because root of number is automatically a float like 
-		3.000000000000000000000000000, so to return int save int part to int_value, 
-		decimal numbers to decimal_numbers then sum it and then if sum of decimal_numbers is != 0, 
-		return result as Decimal else as int.
-		'''
+		# Take number root of a result		
 		operation = Decimal(str(self.result)) ** (Decimal(str(number))**-1)
-
-		int_value = str(operation)[0]
-		decimal_numbers = str(operation)[2:]
-
-		if sum([int(i) for i in decimal_numbers]) != 0:
-			self.result = operation
-		else:
-			self.result = int(int_value)
+		self.result = int_or_decimal(operation)
 		return self.result
 	
 	def reset(self):
