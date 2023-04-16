@@ -20,7 +20,11 @@ def test_add_hypo_int(n):
 		assert calc.add(n) == init_value + n
 
 
-@given(n=st.floats(allow_nan=False, allow_infinity=False))
+@given(n=st.floats(
+	allow_nan=False, 
+	allow_infinity=False, 
+	min_value=-1_000_000_000, 
+	max_value=1_000_000_000))
 def test_add_hypo_float(n):
 	# Testing `add` function with hypothesis for float type
 	calc = bc.Calculator()

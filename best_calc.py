@@ -8,15 +8,19 @@ def int_or_decimal(operation):
 	save int part to int_value, decimal numbers to decimal_numbers then sum it and 
 	then if sum of decimal_numbers is != 0, return result as Decimal else as int.
 	'''
-	if "." in str(operation):
-		int_value, decimal_numbers = str(operation).split(".")
-		if sum([int(i) for i in decimal_numbers]) != 0:
-			value = Decimal(str(float(operation)))
+
+	# Some number can be like 4.76837158203125e-07, so this "if" automaticlly return Decimal
+	if "E" not in str(operation): 
+		if "." in str(operation):
+			int_value, decimal_numbers = str(operation).split(".")
+			if sum([int(i) for i in decimal_numbers]) != 0:
+				value = Decimal(str(float(operation)))
+			else:
+				value = int(int_value)
 		else:
-			value = int(int_value)
+			value = int(operation)
 	else:
-		value = int(operation)
-	print(value)
+		return operation
 	return value
 
 
