@@ -9,8 +9,9 @@ def int_or_decimal(operation):
 	then if sum of decimal_numbers is != 0, return result as Decimal else as int.
 	'''
 
-	# Some number can be like 4.76837158203125e-07 and Decimal representationa of this
-	# number is with "E", not "e".
+	# Some number can be like 4.76837158203125e-07 and is Decimal. Representation of 
+	# this kind of number in Decimal is with "E", not "e", so first "if" is for
+	# skipping a need to return int type.
 	if "E" not ins str(operation):
 		# This part for checking int or Decimal 
 		if "." in str(operation):
